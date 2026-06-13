@@ -29,7 +29,7 @@ export default function ContactSection() {
         >
           لديك فكرة؟
           <br />
-          لنحوّلها إلى واقع.
+           لنحوّلها إلى واقع  
         </motion.h2>
 
         <motion.p
@@ -39,10 +39,10 @@ export default function ContactSection() {
           className="mx-auto mt-8 max-w-3xl text-lg leading-relaxed text-gray-400"
         >
           من السودان نبني حلولاً رقمية تساعد المؤسسات
-          والمشاريع على النمو والتطور.
+          والمشاريع على النمو والتطور
           <br />
-          إذا كانت لديك فكرة أو تحدٍ حقيقي،
-          فنحن جاهزون للبدء.
+         ، إذا كانت لديك فكرة أو تحدٍ حقيق
+          فنحن جاهزون للبدء
         </motion.p>
 
         <div className="mt-14 flex flex-col items-center justify-center gap-5 sm:flex-row">

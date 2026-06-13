@@ -22,9 +22,9 @@ export default function Footer() {
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-400">
-              وسط التحديات تولد الأفكار الأقوى،
+              وسط التحديات تولد الأفكار الأقوى
               <br />
-              ووسط المعاناة يولد الإبداع الحقيقي.
+              ووسط المعاناة يولد الإبداع الحقيقي
             </p>
 
             <div className="mt-8 text-sm tracking-[0.3em] text-yellow-400">

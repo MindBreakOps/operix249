@@ -62,8 +62,8 @@ export default function CTASection() {
           className="mx-auto mt-10 max-w-3xl text-lg leading-loose text-gray-300 md:text-xl"
         >
 
-         ، إذا كنت تؤمن أن التغيير ممك
-         . فنحن مستعدون لبناء شيء استثنائي معك 
+         ، إذا كنت تؤمن أن التغيير ممكن
+          فنحن مستعدون لبناء شيء استثنائي معك 
 
         </motion.p>
 

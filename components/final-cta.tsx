@@ -33,9 +33,9 @@ export default function FinalCTA() {
           viewport={{ once: true }}
           className="mx-auto mt-10 max-w-3xl text-xl leading-relaxed text-gray-400"
         >
-          الأفكار العظيمة تبدأ بخطوة بسيطة.
+          الأفكار العظيمة تبدأ بخطوة بسيطة
           <br />
-          دعنا نحول فكرتك إلى منتج رقمي حقيقي.
+          دعنا نحول فكرتك إلى منتج رقمي حقيقي
         </motion.p>
 
         <motion.div
