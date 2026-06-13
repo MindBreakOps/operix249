@@ -21,7 +21,7 @@ const visionPoints = [
     number: "03",
     title: "Future Built From Reality",
     description:
-      "نصنع مستقبلًا رقميًا ينطلق من الواقع والتحديات الحقيقية، لا من الخيال فقط",
+      "نصنع مستقبلًا رقميًا ينطلق من الواقع والتحديات الحقيقية، لا من الخيال فقط ",
   },
 ]
 
@@ -61,9 +61,9 @@ export default function VisionSection() {
 
           <h2 className="mt-10 text-5xl font-black leading-tight md:text-7xl">
 
-            نحن لا ننتظر المستقبل...
+           ... نحن لا ننتظر المستقبل
             <span className="block text-yellow-400">
-              نحن نحاول بناءه.
+              نحن نحاول بناءه
             </span>
 
           </h2>

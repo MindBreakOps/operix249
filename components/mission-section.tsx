@@ -59,7 +59,7 @@ export default function MissionSection() {
 
           <p className="mt-8 text-lg leading-loose text-gray-300 md:text-xl">
 
-           ، نحن نؤمن أن التكنولوجيا يمكن أن تكون أداة للنهوض
+            نحن نؤمن أن التكنولوجيا يمكن أن تكون أداة للنهوض
            . وأن الأفكار العظيمة لا تحتاج لظروف مثالية حتى تولد
 
           </p>

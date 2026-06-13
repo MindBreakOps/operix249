@@ -33,15 +33,15 @@ export default function HeroSection() {
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.2] mb-6">
               وسط التحديات تولد <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">الأفكار الأقوي.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">الأفكار الأقوى</span>
             </h1>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-[1.2] mb-8">
               ووسط المعاناة يولد <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">الإبداع الحقيقي.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">الإبداع الحقيقي</span>
             </h2>
 
             <p className="text-gray-300 text-lg mb-8 max-w-xl leading-relaxed font-light">
-              نحن في <span className="font-semibold text-amber-400">OPERIX 249</span> نبني حلولاً رقمية وأنظمة ذكية تساعد الأعمال علي الاستمرار، النمو، ومواكبة المستقبل.
+              نحن في <span className="font-semibold text-amber-400">OPERIX 249</span> نبني حلولاً رقمية وأنظمة ذكية تساعد الأعمال علي الاستمرار، النمو، ومواكبة المستقبل
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
