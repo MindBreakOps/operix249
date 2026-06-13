@@ -8,6 +8,8 @@ import { motion, AnimatePresence } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
 
+import { Languages } from "lucide-react"
+
 export default function Navbar() {
   const [open, setOpen] = useState(false)
 
@@ -145,6 +147,43 @@ export default function Navbar() {
                 </a>
 
               </div>
+
+              {/* language */}
+              <div
+               className="
+              hidden
+              md:flex
+              items-center
+               gap-3
+              rounded-full
+              border
+              border-white/10
+              bg-white/5
+              px-4
+              py-2
+              text-sm
+             text-gray-300
+             backdrop-blur-xl
+  "
+              >
+           <Languages size={16} />
+
+          <button className="text-yellow-400">
+               العربية
+           </button>
+
+           <span>|</span>
+
+          <button>
+             EN
+           </button>
+           </div>
+
+
+
+
+
+
 
               {/* CTA */}
               <Button className="mt-auto bg-yellow-500 text-black hover:bg-yellow-400">
