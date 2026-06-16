@@ -10,7 +10,12 @@ import { Button } from "@/components/ui/button"
 
 import { Languages } from "lucide-react"
 
+import Link from 'next/link';
+
+
+
 export default function Navbar() {
+  
   const [open, setOpen] = useState(false)
 
   return (
@@ -21,59 +26,98 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-3">
 
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-yellow-500 to-yellow-700" />
+          {/* كود الصورة الجديد */}
+  <img 
+    src="/logo.png" 
+    alt="OPERIX Solutions Logo" 
+    className="h-14 w-auto object-contain" 
+  />
 
-          <div>
-            <h1 className="text-xl font-bold tracking-wide text-white">
-              OPERIX 249
-            </h1>
-
-            <p className="text-xs text-gray-400">
-              Sudan Future AI
-            </p>
-          </div>
-
-        </div>
+  <div>
+    <h1 className="text-xl font-bold tracking-wide text-white">
+      OPERIX 249
+    </h1>
+    <p className="text-xs text-gray-400">
+      Sudan Future AI
+    </p>
+  </div>
+</div>
 
         {/* Desktop Nav */}
-        <nav className="hidden gap-8 text-sm text-gray-300 md:flex">
+        <nav className="hidden items-center gap-8 text-sm text-gray-300 md:flex">
 
-          <a
-            href="#"
-            className="transition hover:text-yellow-400"
-          >
-            Home
-          </a>
+  <a
+    href="#home"
+    className="transition hover:text-yellow-400"
+  >
+    الرئيسية
+  </a>
 
-          <a
-            href="#"
-            className="transition hover:text-yellow-400"
-          >
-            Services
-          </a>
+  <a
+    href="#services"
+    className="transition hover:text-yellow-400"
+  >
+    خدماتنا
+  </a>
 
-          <a
-            href="#"
-            className="transition hover:text-yellow-400"
-          >
-            Portfolio
-          </a>
+  <a
+    href="#portfolio"
+    className="transition hover:text-yellow-400"
+  >
+    أعمالنا
+  </a>
 
-          <a
-            href="#"
-            className="transition hover:text-yellow-400"
-          >
-            Contact
-          </a>
 
-        </nav>
+
+  <a
+    href="#why-operix"
+    className="transition hover:text-yellow-400"
+  >
+   why operix249
+  </a>
+
+</nav>
 
         {/* Right Side */}
-        <div className="flex items-center gap-4">
 
-          <Button className="hidden bg-yellow-500 text-black hover:bg-yellow-400 md:flex">
-            Contact Us
-          </Button>
+        <div className="flex items-center gap-4">
+        <div
+  className="
+  hidden
+  lg:flex
+  items-center
+  gap-3
+  rounded-full
+  border
+  border-white/10
+  bg-white/5
+  px-4
+  py-2
+  text-sm
+  text-gray-300
+  backdrop-blur-xl
+"
+>
+  <Languages size={16} />
+
+  <button className="text-yellow-400">
+    العربية
+  </button>
+
+  <span>|</span>
+
+  <button>
+    EN
+  </button>
+</div>
+
+
+          <Link 
+  href="#contact" 
+  className="hidden md:flex items-center justify-center px-4 py-2 rounded-md bg-yellow-500 text-black font-medium hover:bg-yellow-400 transition-colors"
+>
+  Contact Us
+</Link>
 
           {/* Mobile Menu Button */}
           <button
@@ -130,23 +174,24 @@ export default function Navbar() {
               {/* Links */}
               <div className="flex flex-col gap-8 text-lg text-white">
 
-                <a href="#" onClick={() => setOpen(false)}>
-                  Home
-                </a>
+  <a href="#home" onClick={() => setOpen(false)}>
+    الرئيسية
+  </a>
 
-                <a href="#" onClick={() => setOpen(false)}>
-                  Services
-                </a>
+  <a href="#services" onClick={() => setOpen(false)}>
+    خدماتنا
+  </a>
 
-                <a href="#" onClick={() => setOpen(false)}>
-                  Portfolio
-                </a>
+  <a href="#portfolio" onClick={() => setOpen(false)}>
+    أعمالنا
+  </a>
 
-                <a href="#" onClick={() => setOpen(false)}>
-                  Contact
-                </a>
 
-              </div>
+  <a href="#why-operix" onClick={() => setOpen(false)}>
+   why operix
+  </a>
+
+</div>
 
               {/* language */}
               <div

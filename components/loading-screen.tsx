@@ -16,7 +16,6 @@ export default function LoadingScreen() {
 
   return (
     <AnimatePresence>
-
       {loading && (
         <motion.div
           initial={{ opacity: 1 }}
@@ -24,9 +23,7 @@ export default function LoadingScreen() {
           transition={{ duration: 1 }}
           className="fixed inset-0 z-[200] flex items-center justify-center bg-[#020817]"
         >
-
           <div className="text-center">
-
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{
@@ -38,9 +35,12 @@ export default function LoadingScreen() {
               }}
               className="mb-6 flex items-center justify-center"
             >
-
-              <div className="h-20 w-20 rounded-3xl bg-gradient-to-br from-yellow-500 to-yellow-700 shadow-[0_0_80px_rgba(212,160,23,0.45)]" />
-
+              {/* تم استبدال المربع باللوجو المفرغ مع تأثير الإضاءة الملتفة */}
+              <img 
+                src="/logo.png" 
+                alt="Operix Solutions Logo" 
+                className="h-32 w-auto object-contain drop-shadow-[0_0_35px_rgba(212,160,23,0.45)]" 
+              />
             </motion.div>
 
             <motion.h1
@@ -68,12 +68,9 @@ export default function LoadingScreen() {
             >
               Sudan Future AI
             </motion.p>
-
           </div>
-
         </motion.div>
       )}
-
     </AnimatePresence>
   )
 }

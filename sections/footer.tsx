@@ -94,7 +94,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <Mail size={18} />
-              <span>operix249@gmail.com</span>
+              <span>mustafa.abdallah@operix-solutions.com</span>
             </div>
 
             <div className="flex items-center gap-3">
@@ -133,6 +133,7 @@ export default function Footer() {
 
         <p>
           Under the Operix Solutions
+          www.operix-solutions.com
         </p>
 
       </div>

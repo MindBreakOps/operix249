@@ -3,13 +3,13 @@
 import { motion } from "framer-motion"
 import { Mail, MessageCircle, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from 'next/link';
+
+
 
 export default function ContactSection() {
   return (
-    <section
-      id="contact"
-      className="relative bg-[#020817] px-6 py-32 text-white"
-    >
+    <section id="contact" className="relative bg-[#020817] px-6 py-32 text-white">
       <div className="mx-auto max-w-5xl text-center">
 
         <motion.span
@@ -41,14 +41,14 @@ export default function ContactSection() {
           من السودان نبني حلولاً رقمية تساعد المؤسسات
           والمشاريع على النمو والتطور
           <br />
-         ، إذا كانت لديك فكرة أو تحدٍ حقيق
+          إذا كانت لديك فكرة أو تحدٍ حقيق
           فنحن جاهزون للبدء
         </motion.p>
 
         <div className="mt-14 flex flex-col items-center justify-center gap-5 sm:flex-row">
 
           <a
-            href="https://wa.me/249XXXXXXXXX"
+            href="https://wa.me/249126968187"
             target="_blank"
             rel="noreferrer"
           >
@@ -58,15 +58,20 @@ export default function ContactSection() {
             </Button>
           </a>
 
-          <a href="mailto:your@email.com">
-            <Button
-              variant="outline"
-              className="h-14 rounded-2xl border-white/20 bg-white/5 px-8 text-white hover:bg-white/10"
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Email
-            </Button>
-          </a>
+          {/* زر الإيميل الاحترافي عبر الويب - يفتح في صفحة جديدة ويشتغل على أي جهاز */}
+<a 
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=operix249@gmail.com&su=Project%20Inquiry%20-%20OPERIX%20249"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="h-14 px-8 rounded-2xl border border-white/20 bg-white/5 text-white font-medium hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 text-sm"
+>
+  {/* أيقونة الـ SVG */}
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400">
+    <rect width="20" height="16" x="2" y="4" rx="2"/>
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+  </svg>
+  <span>Email</span>
+</a>
 
         </div>
 

@@ -36,7 +36,10 @@ const reasons = [
 
 export default function WhyOperix() {
   return (
-    <section className="relative overflow-hidden bg-[#020817] px-6 py-32 text-white">
+   <section
+      id="why-operix"
+      className="relative overflow-hidden bg-[#020817] px-6 py-32 text-white">"
+    
 
       <div className="absolute inset-0">
 

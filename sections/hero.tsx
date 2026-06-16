@@ -86,3 +86,4 @@ export default function HeroSection() {
     </section>
   );
 }
+<section id="home"></section> 

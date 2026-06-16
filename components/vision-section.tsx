@@ -27,7 +27,10 @@ const visionPoints = [
 
 export default function VisionSection() {
   return (
-    <section className="relative overflow-hidden bg-[#020817] px-6 py-40 text-white">
+   <section
+      id="vision-section"
+      className="relative overflow-hidden bg-[#020817] px-6 py-40 text-white"
+    >
       <SudanLayer />
       {/* Background */}
       <div className="absolute inset-0">

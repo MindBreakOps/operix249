@@ -41,7 +41,7 @@ export default function Contact() {
               </p>
 
               <h3 className="text-xl font-semibold text-white">
-                operix249@gmail.com
+                mustafa.abdallah@operix-solutions.com
               </h3>
             </div>
 
@@ -111,3 +111,4 @@ export default function Contact() {
     </section>
   )
 }
+<section id="contact"></section>

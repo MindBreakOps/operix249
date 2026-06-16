@@ -51,9 +51,9 @@ export default function HowWeWork() {
           </h2>
 
           <p className="mt-8 text-lg leading-relaxed text-gray-400">
-           . لا نبدأ بالكود
+            لا نبدأ بالكود
             <br />
-           ، نبدأ بفهم الناس، ثم نصمم الحل، ثم نبنيه
+            نبدأ بفهم الناس، ثم نصمم الحل، ثم نبنيه
             ثم نرافقه حتى ينجح
           </p>
         </motion.div>
