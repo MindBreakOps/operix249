@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import ProjectNavbar from "@/components/project-navbar"
 
-export default function ShifaProjectPage() {
+export default function EduProjectPage() {
   // إعدادات الحركة (Framer Motion Variants)
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -20,12 +20,12 @@ export default function ShifaProjectPage() {
   };
 
   return (
-    <main className="min-h-screen bg-[#020817] text-white selection:bg-cyan-500/30 font-sans" dir="rtl">
+    <main className="min-h-screen bg-[#020817] text-white selection:bg-indigo-500/30 font-sans" dir="rtl">
       <ProjectNavbar />
       {/* 1. Hero Section */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden py-32 px-6">
-        {/* تأثيرات الإضاءة الخلفية الطبية */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[800px] bg-cyan-500/20 blur-[120px] rounded-full pointer-events-none" />
+        {/* تأثيرات الإضاءة الخلفية الأكاديمية */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-[500px] w-[800px] bg-indigo-500/20 blur-[120px] rounded-full pointer-events-none" />
         
         <motion.div 
           className="relative z-10 mx-auto max-w-5xl text-center"
@@ -34,30 +34,30 @@ export default function ShifaProjectPage() {
           variants={staggerContainer}
         >
           <motion.div variants={fadeIn}>
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-5 py-2 text-sm font-medium text-cyan-400 backdrop-blur-md">
-              <span>🇸🇩</span> Healthcare Digital Transformation
+            <span className="inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-5 py-2 text-sm font-medium text-indigo-400 backdrop-blur-md">
+              <span>🇸🇩</span> Educational Digital Transformation
             </span>
           </motion.div>
 
           <motion.h1 variants={fadeIn} className="mt-8 text-6xl font-black leading-tight tracking-tight md:text-8xl lg:text-[6rem]">
-            منظومة <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-600">شفاء</span>
+            منظومة <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-indigo-600">مسار</span>
           </motion.h1>
 
-          <motion.p variants={fadeIn} className="mt-6 text-2xl font-light tracking-wide text-cyan-200/80" dir="ltr">
-            Shifa Healthcare System
+          <motion.p variants={fadeIn} className="mt-6 text-2xl font-light tracking-wide text-indigo-200/80" dir="ltr">
+            Education Management System
           </motion.p>
 
           <motion.p variants={fadeIn} className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl">
-            نظام طبي متكامل لإدارة المستشفيات والعيادات والمختبرات والصيدليات والملفات الطبية الإلكترونية بأعلى معايير الكفاءة والأمان.
+            منصة رقمية متكاملة لإدارة المدارس والجامعات والمراكز التعليمية، توفر بيئة تفاعلية بين الطالب، المعلم، والإدارة لضمان تجربة تعليمية حديثة.
           </motion.p>
 
-          {/* زر الاشتراك / المعاينة المضاف هنا */}
+          {/* زر الاشتراك / المعاينة */}
           <motion.div variants={fadeIn} className="mt-10 flex justify-center">
             <a
-              href="https://www.care.operix-solutions.online/"
+              href="https://www.edu.operix-solutions.online"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center gap-3 overflow-hidden rounded-2xl bg-cyan-500 px-8 py-4 font-bold text-black transition-all hover:scale-105 hover:bg-cyan-400 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)]"
+              className="group relative flex items-center gap-3 overflow-hidden rounded-2xl bg-indigo-500 px-8 py-4 font-bold text-white transition-all hover:scale-105 hover:bg-indigo-400 hover:shadow-[0_0_40px_rgba(99,102,241,0.3)]"
             >
               <span className="relative z-10 text-lg">الاشتراك وزيارة النظام</span>
               <svg className="w-5 h-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,16 +78,16 @@ export default function ShifaProjectPage() {
           variants={staggerContainer}
         >
           <motion.div variants={fadeIn} className="space-y-6">
-            <h2 className="text-3xl font-bold text-cyan-400 md:text-4xl">القصة</h2>
+            <h2 className="text-3xl font-bold text-indigo-400 md:text-4xl">القصة</h2>
             <p className="text-lg leading-loose text-gray-300">
-              في بيئة صحية تعتمد كلياً على السرعة والدقة، جاءت <strong className="text-white">منظومة شفاء</strong> لرقمنة رحلة المريض بالكامل. نسعى لتسهيل الخطوات وتوفير تجربة استثنائية تبدأ من الاستقبال والتشخيص وحتى صرف الدواء وإصدار التقارير الطبية.
+              في ظل التطور التكنولوجي السريع، صممنا منظومة <strong className="text-white">مسار</strong> لتكون جسراً يربط بين الأساليب التعليمية العريقة وأدوات العصر الرقمي، مما يتيح للمؤسسات التعليمية إدارة شؤونها الأكاديمية والإدارية بكل سلاسة واحترافية.
             </p>
           </motion.div>
 
           <motion.div variants={fadeIn} className="space-y-6">
-            <h2 className="text-3xl font-bold text-cyan-400 md:text-4xl">التحدي والحل</h2>
+            <h2 className="text-3xl font-bold text-indigo-400 md:text-4xl">التحدي والحل</h2>
             <p className="text-lg leading-loose text-gray-300">
-              الاعتماد التقليدي على الملفات الورقية وصعوبة الربط الفوري بين الطبيب والمختبر والصيدلية يتسبب دائماً في بطء الخدمة وفقدان البيانات الطبية الهامة. لذلك قمنا بتطوير <strong className="text-white">نظام طبي سحابي موحد</strong> يدمج جميع أقسام المنشأة الصحية في منصة واحدة آمنة.
+              كانت إدارة الجداول، الاختبارات، المناهج، والتواصل مع أولياء الأمور تتم بطرق مشتتة وورقية. الحل كان في <strong className="text-white">منصة تعليمية سحابية</strong> تجمع شؤون الطلاب، الموارد البشرية، والنظام المالي في مكان واحد آمن وفعال.
             </p>
           </motion.div>
         </motion.div>
@@ -102,8 +102,8 @@ export default function ShifaProjectPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-black text-white md:text-5xl">واجهات <span className="text-cyan-400">المنظومة</span></h2>
-            <p className="mt-4 text-gray-400 text-lg">بساطة التصميم تلتقي مع دقة الأداء الطبي</p>
+            <h2 className="text-4xl font-black text-white md:text-5xl">واجهات <span className="text-indigo-400">المنظومة</span></h2>
+            <p className="mt-4 text-gray-400 text-lg">بيئة تعليمية رقمية سهلة الاستخدام</p>
           </motion.div>
 
           <div className="grid gap-8 md:grid-cols-2">
@@ -119,8 +119,8 @@ export default function ShifaProjectPage() {
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-[#020817] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <img
-                  src={`/shifa-${num}.png`}
-                  alt={`Shifa interface ${num}`}
+                  src={`/edu-${num}.png`}
+                  alt={`Edu interface ${num}`}
                   className="h-full w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </motion.div>
@@ -132,14 +132,14 @@ export default function ShifaProjectPage() {
       {/* 4. Core Modules */}
       <section className="px-6 py-24 bg-white/[0.02]">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-16 text-center text-4xl font-black text-white md:text-5xl">الأقسام <span className="text-cyan-400">المدعومة</span></h2>
+          <h2 className="mb-16 text-center text-4xl font-black text-white md:text-5xl">الأقسام <span className="text-indigo-400">الأساسية</span></h2>
           
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
-              "إدارة المستشفيات والعيادات",
-              "نظام المختبرات والتحاليل",
-              "إدارة الصيدليات والمخزون",
-              "السجلات والملفات الطبية"
+              "إدارة شؤون الطلاب والقبول",
+              "نظام الامتحانات والنتائج",
+              "بوابة المعلمين وأولياء الأمور",
+              "الإدارة المالية والموارد البشرية"
             ].map((feature, idx) => (
               <motion.div
                 key={idx}
@@ -147,7 +147,7 @@ export default function ShifaProjectPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-8 text-center text-lg font-medium text-gray-200 backdrop-blur-xl transition-colors hover:border-cyan-500/30 hover:bg-white/10"
+                className="flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-8 text-center text-lg font-medium text-gray-200 backdrop-blur-xl transition-colors hover:border-indigo-500/30 hover:bg-white/10"
               >
                 {feature}
               </motion.div>
@@ -158,16 +158,16 @@ export default function ShifaProjectPage() {
 
       {/* 5. Impact Metrics */}
       <section className="px-6 py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-900/20 via-[#020817] to-[#020817]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-indigo-900/20 via-[#020817] to-[#020817]" />
         
         <div className="relative z-10 mx-auto max-w-6xl">
-          <h2 className="mb-16 text-center text-4xl font-black text-white md:text-5xl">التأثير <span className="text-cyan-400">والأرقام</span></h2>
+          <h2 className="mb-16 text-center text-4xl font-black text-white md:text-5xl">التأثير <span className="text-indigo-400">والأرقام</span></h2>
           
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { value: "70%", label: "تسريع العمليات الطبية وسير العمل" },
-              { value: "EMR", label: "ملفات طبية إلكترونية موحدة لكل مريض" },
-              { value: "24/7", label: "وصول آمن ومستمر لبيانات المرضى التقارير" }
+              { value: "100%", label: "أتمتة كاملة للعمليات الإدارية والأكاديمية" },
+              { value: "LMS", label: "نظام إدارة تعلم تفاعلي متكامل" },
+              { value: "24/7", label: "متابعة مستمرة لأداء الطلاب وتحصيلهم" }
             ].map((stat, idx) => (
               <motion.div
                 key={idx}
@@ -175,9 +175,9 @@ export default function ShifaProjectPage() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1, type: "spring" }}
-                className="rounded-3xl border border-white/10 bg-black/40 p-10 text-center backdrop-blur-xl hover:border-cyan-500/20 transition-colors"
+                className="rounded-3xl border border-white/10 bg-black/40 p-10 text-center backdrop-blur-xl hover:border-indigo-500/20 transition-colors"
               >
-                <h3 className="text-5xl font-black text-cyan-400 mb-4">{stat.value}</h3>
+                <h3 className="text-5xl font-black text-indigo-400 mb-4">{stat.value}</h3>
                 <p className="text-lg text-gray-300">{stat.label}</p>
               </motion.div>
             ))}
@@ -185,7 +185,7 @@ export default function ShifaProjectPage() {
         </div>
       </section>
 
-      {/* 6. Call to Action & Footer (المعدل) */}
+      {/* 6. Call to Action & Footer */}
       <section className="px-6 py-24 bg-white/[0.02] border-t border-white/5">
         <div className="mx-auto max-w-5xl text-center">
           <motion.div 
@@ -194,12 +194,12 @@ export default function ShifaProjectPage() {
             viewport={{ once: true }}
             className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
-            {/* زر الاشتراك في النظام (جديد) */}
+            {/* زر الاشتراك في النظام */}
             <a
-              href="https://www.care.operix-solutions.online/"
+              href="https://www.edu.operix-solutions.online"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative overflow-hidden rounded-2xl bg-cyan-500 px-10 py-5 font-bold text-black transition-all hover:scale-105 hover:bg-cyan-400 hover:shadow-[0_0_40px_rgba(6,182,212,0.3)] w-full sm:w-auto"
+              className="group relative overflow-hidden rounded-2xl bg-indigo-500 px-10 py-5 font-bold text-white transition-all hover:scale-105 hover:bg-indigo-400 hover:shadow-[0_0_40px_rgba(99,102,241,0.3)] w-full sm:w-auto"
             >
               <span className="relative z-10 flex items-center justify-center gap-3 text-lg">
                 الاشتراك وتجربة النظام

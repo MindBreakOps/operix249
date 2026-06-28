@@ -50,6 +50,21 @@ export default function HashdProjectPage() {
           <motion.p variants={fadeIn} className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl">
             منصة رقمية متكاملة لإحصاء السكان وإدارة شؤون الأحياء السكنية ولجان الخدمات المجتمعية بكفاءة عالية.
           </motion.p>
+
+          {/* زر الاشتراك / المعاينة المضاف هنا */}
+          <motion.div variants={fadeIn} className="mt-10 flex justify-center">
+            <a
+              href="https://www.hasad.operix-solutions.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex items-center gap-3 overflow-hidden rounded-2xl bg-yellow-500 px-8 py-4 font-bold text-black transition-all hover:scale-105 hover:bg-yellow-400 hover:shadow-[0_0_40px_rgba(234,179,8,0.3)]"
+            >
+              <span className="relative z-10 text-lg">الاشتراك وزيارة النظام</span>
+              <svg className="w-5 h-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -170,17 +185,34 @@ export default function HashdProjectPage() {
         </div>
       </section>
 
-      {/* 6. Call to Action & Footer */}
+      {/* 6. Call to Action & Footer (المعدل) */}
       <section className="px-6 py-24 bg-white/[0.02] border-t border-white/5">
         <div className="mx-auto max-w-5xl text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-6"
           >
-            <Link href="/#portfolio">
-              <button className="group relative overflow-hidden rounded-2xl bg-yellow-500 px-10 py-5 font-bold text-black transition-all hover:scale-105 hover:bg-yellow-400 hover:shadow-[0_0_40px_rgba(234,179,8,0.3)]">
-                <span className="relative z-10 flex items-center gap-2 text-lg">
+            {/* زر الاشتراك في النظام (جديد) */}
+            <a
+              href="https://www.hasad.operix-solutions.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative overflow-hidden rounded-2xl bg-yellow-500 px-10 py-5 font-bold text-black transition-all hover:scale-105 hover:bg-yellow-400 hover:shadow-[0_0_40px_rgba(234,179,8,0.3)] w-full sm:w-auto"
+            >
+              <span className="relative z-10 flex items-center justify-center gap-3 text-lg">
+                الاشتراك وتجربة النظام
+                <svg className="w-5 h-5 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </span>
+            </a>
+
+            {/* زر العودة للمشاريع */}
+            <Link href="/#portfolio" className="w-full sm:w-auto">
+              <button className="group relative w-full overflow-hidden rounded-2xl border border-white/10 bg-white/5 px-10 py-5 font-bold text-white transition-all hover:scale-105 hover:bg-white/10 hover:border-white/30 backdrop-blur-md">
+                <span className="relative z-10 flex items-center justify-center gap-2 text-lg">
                   العودة إلى المشاريع
                   <svg className="w-5 h-5 rotate-180 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
